@@ -16,12 +16,14 @@ struct Sky_dragon: View {
     let stats: String
     var body: some View {
         ZStack {
+        Color("Color")
+                .ignoresSafeArea()
             VStack{
                 HStack{
                     Text(name)
-                        
-                    Spacer()
+                        .font(.system(size: 22))
                     Image("God")
+                 
                 }
                 HStack{
                     Spacer()
@@ -30,18 +32,26 @@ struct Sky_dragon: View {
                 Image("Stlifer")
                     .resizable()
                     .scaledToFit()
-                HStack{
-                    Text(type)
-                    Spacer()
-                }
-                .padding()
-                Text(description)
-                Spacer()
-                HStack{
-                    Spacer()
-                    Text(stats)
+                ZStack{
+                    Rectangle()
+                    Color.yellow
+                    VStack{
+                        HStack{
+                            Text(type)
+                            Spacer()
+                        }
                         
+                        .padding()
+                        Text(description)
+                        Spacer()
+                        HStack{
+                            Spacer()
+                            Text(stats)
+                            
+                        }
+                    }
                 }
+               
                 
             }
         }
@@ -49,5 +59,5 @@ struct Sky_dragon: View {
 }
 
 #Preview {
-    Sky_dragon(name: "Slifer the sky dragon", stars: "Stars",image:"dragon", type:"Divine-Beast", description: "the heavens twist and thunders roars, signaling the coming of this ancient creatre, and the dawn of true power", stats: "ATkX000, Def,X000" )
+    Sky_dragon(name: "SLIFER THE SKY DRAGON", stars: "Stars",image:"dragon", type:"DIVINE BEAST", description: "the heavens twist and thunders roars, signaling the coming of this ancient creatre, and the dawn of true power", stats: "ATkX000, Def,X000" )
 }
