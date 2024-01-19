@@ -16,13 +16,18 @@ struct Sky_dragon: View {
     let stats: String
     var body: some View {
         ZStack {
-        Color("Color")
+        Color("Color 1")
                 .ignoresSafeArea()
             VStack{
                 HStack{
+                    Spacer()
                     Text(name)
-                        .font(.system(size: 22))
+                        .font(.system(size: 29))
+                    Spacer()
                     Image("God")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 40)
                  
                 }
                 HStack{
@@ -34,7 +39,9 @@ struct Sky_dragon: View {
                     .scaledToFit()
                 ZStack{
                     Rectangle()
+                        .frame(width: 20, height: 20)
                     Color.yellow
+
                     VStack{
                         HStack{
                             Text(type)
