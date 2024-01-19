@@ -10,13 +10,14 @@ import SwiftUI
 struct Sky_dragon: View {
     let name: String
     let stars: String
-    let image: String
     let type: String
     let description: String
     let stats: String
+    var image: String
+    var backcolor: String
     var body: some View {
         ZStack {
-        Color("Color 1")
+        Color(backcolor)
                 .ignoresSafeArea()
             VStack{
                 HStack{
@@ -32,15 +33,21 @@ struct Sky_dragon: View {
                 }
                 HStack{
                     Spacer()
-                    Text("stars(image)")
+                    Image("Stars")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 300)
                 }
-                Image("Stlifer")
+                Image(image)
                     .resizable()
                     .scaledToFit()
+                    .frame(height: 450)
+                   
+                    
                 ZStack{
                     Rectangle()
                         .frame(width: 20, height: 20)
-                    Color.yellow
+                    Color("Color2")
 
                     VStack{
                         HStack{
@@ -51,9 +58,11 @@ struct Sky_dragon: View {
                         .padding()
                         Text(description)
                         Spacer()
+                        Divider()
                         HStack{
                             Spacer()
                             Text(stats)
+                                .padding()
                             
                         }
                     }
@@ -66,5 +75,5 @@ struct Sky_dragon: View {
 }
 
 #Preview {
-    Sky_dragon(name: "SLIFER THE SKY DRAGON", stars: "Stars",image:"dragon", type:"DIVINE BEAST", description: "the heavens twist and thunders roars, signaling the coming of this ancient creatre, and the dawn of true power", stats: "ATkX000, Def,X000" )
+    Sky_dragon(name: "SLIFER THE SKY DRAGON", stars: "Stars", type:"DIVINE BEAST", description: "the heavens twist and thunders roars, signaling the coming of this ancient creatre, and the dawn of true power", stats: "ATkX000, Def,X000", image: "Stlifer", backcolor: "Color 1")
 }
