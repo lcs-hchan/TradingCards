@@ -11,6 +11,7 @@
 		8B01A4502B5AB0EC0025B03F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B01A44F2B5AB0EC0025B03F /* ContentView.swift */; };
 		8B01A4522B5AB0F60025B03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B01A4512B5AB0F60025B03F /* Assets.xcassets */; };
 		8B01A4552B5AB0F60025B03F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B01A4542B5AB0F60025B03F /* Preview Assets.xcassets */; };
+		8B01A45C2B5AB17A0025B03F /* Sky dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B01A45B2B5AB17A0025B03F /* Sky dragon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		8B01A44F2B5AB0EC0025B03F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8B01A4512B5AB0F60025B03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8B01A4542B5AB0F60025B03F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8B01A45B2B5AB17A0025B03F /* Sky dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sky dragon.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				8B01A44D2B5AB0EC0025B03F /* TradingCardsApp.swift */,
 				8B01A44F2B5AB0EC0025B03F /* ContentView.swift */,
+				8B01A45B2B5AB17A0025B03F /* Sky dragon.swift */,
 				8B01A4512B5AB0F60025B03F /* Assets.xcassets */,
 				8B01A4532B5AB0F60025B03F /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B01A4502B5AB0EC0025B03F /* ContentView.swift in Sources */,
+				8B01A45C2B5AB17A0025B03F /* Sky dragon.swift in Sources */,
 				8B01A44E2B5AB0EC0025B03F /* TradingCardsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
