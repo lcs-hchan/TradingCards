@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Sky_dragon: View {
     let name: String
+    let attribute: String
     let stars: String
     let type: String
     let description: String
@@ -23,9 +24,10 @@ struct Sky_dragon: View {
                 HStack{
                     Spacer()
                     Text(name)
-                        .font(.system(size: 29))
+                        .bold()
+                        .font(.system(size: 28))
                     Spacer()
-                    Image("God")
+                    Image(attribute)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 40)
@@ -33,7 +35,7 @@ struct Sky_dragon: View {
                 }
                 HStack{
                     Spacer()
-                    Image("Stars")
+                    Image(stars)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 300)
@@ -52,16 +54,19 @@ struct Sky_dragon: View {
                     VStack{
                         HStack{
                             Text(type)
+                                .bold()
                             Spacer()
                         }
                         
                         .padding()
                         Text(description)
+                            .bold()
                         Spacer()
                         Divider()
                         HStack{
                             Spacer()
                             Text(stats)
+                                .bold()
                                 .padding()
                             
                         }
@@ -75,5 +80,5 @@ struct Sky_dragon: View {
 }
 
 #Preview {
-    Sky_dragon(name: "SLIFER THE SKY DRAGON", stars: "Stars", type:"DIVINE BEAST", description: "the heavens twist and thunders roars, signaling the coming of this ancient creatre, and the dawn of true power", stats: "ATkX000, Def,X000", image: "Stlifer", backcolor: "Color 1")
+    Sky_dragon(name: "SLIFER THE SKY DRAGON", attribute: "God", stars: "Stars", type:"DIVINE BEAST", description: "The heavens twist and thunders roars, signaling the coming of this ancient creatre, and the dawn of true power", stats: "ATkX000, Def,X000", image: "Stlifer", backcolor: "Color 1")
 }
