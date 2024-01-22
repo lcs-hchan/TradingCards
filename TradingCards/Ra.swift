@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Ra: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+          Sky_dragon(name: "The Winged Dragon Of Ra", attribute: "God2", stars: "Stars3", type:"[DIVINE BEAST]", description: "Spirits sing of a powerful creature that rule sover all that is mystic", stats: "ATkX000, Def,X000", image: "Ra", backcolor: "Color4")
     }
 }
 
