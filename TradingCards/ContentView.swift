@@ -33,8 +33,9 @@ struct ContentView: View {
                    
                 }
             }
+            .navigationTitle("Yugioh God Cards")
         }
-        .padding()
+       
     }
 }
 

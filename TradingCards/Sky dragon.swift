@@ -25,12 +25,12 @@ struct Sky_dragon: View {
                     Spacer()
                     Text(name)
                         .bold()
-                        .font(.system(size: 25))
+                        .font(.system(size: 23))
                     Spacer()
                     Image(attribute)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 50)
+                        .frame(width: 40)
                  
                 }
                 HStack{
@@ -38,12 +38,12 @@ struct Sky_dragon: View {
                     Image(stars)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 300)
+                        .frame(width: 250)
                 }
                 Image(image)
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 400)
+                    .frame(height: 360)
                    
                     
                 ZStack{
