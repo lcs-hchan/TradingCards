@@ -25,12 +25,12 @@ struct Sky_dragon: View {
                     Spacer()
                     Text(name)
                         .bold()
-                        .font(.system(size: 28))
+                        .font(.system(size: 25))
                     Spacer()
                     Image(attribute)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40)
+                        .frame(width: 50)
                  
                 }
                 HStack{
@@ -63,6 +63,7 @@ struct Sky_dragon: View {
                             .bold()
                         Spacer()
                         Divider()
+                            .bold()
                         HStack{
                             Spacer()
                             Text(stats)
@@ -80,5 +81,5 @@ struct Sky_dragon: View {
 }
 
 #Preview {
-    Sky_dragon(name: "SLIFER THE SKY DRAGON", attribute: "God", stars: "Stars", type:"DIVINE BEAST", description: "The heavens twist and thunders roars, signaling the coming of this ancient creatre, and the dawn of true power", stats: "ATkX000, Def,X000", image: "Stlifer", backcolor: "Color 1")
+    Sky_dragon(name: "SLIFER THE SKY DRAGON", attribute: "God", stars: "Stars", type:"[DIVINE BEAST]", description: "The heavens twist and thunders roars, signaling the coming of this ancient creatre, and the dawn of true power", stats: "ATkX000, Def,X000", image: "Stlifer", backcolor: "Color 1")
 }
