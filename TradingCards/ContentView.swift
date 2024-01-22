@@ -15,9 +15,22 @@ struct ContentView: View {
                     NavigationLink{
                         Tormentor()
                     }label: {
-                        Text("Hi")
+                        Text("Obelisk The Tormentor")
 
                     }
+                    NavigationLink{
+                        Ra()
+                    }label: {
+                        Text("The Winged Dragon of Ra")
+
+                    }
+                    NavigationLink{
+                        Slifer()
+                    }label: {
+                        Text("Slifer The Sky Dragon")
+
+                    }
+                   
                 }
             }
         }

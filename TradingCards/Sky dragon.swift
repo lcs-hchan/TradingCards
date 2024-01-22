@@ -43,7 +43,7 @@ struct Sky_dragon: View {
                 Image(image)
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 450)
+                    .frame(height: 400)
                    
                     
                 ZStack{
@@ -60,10 +60,10 @@ struct Sky_dragon: View {
                         
                         .padding()
                         Text(description)
+                            .font(.system(size: 13))
                             .bold()
                         Spacer()
-                        Divider()
-                            .bold()
+     
                         HStack{
                             Spacer()
                             Text(stats)
