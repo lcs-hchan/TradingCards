@@ -33,7 +33,7 @@ struct Sky_dragon: View {
                     Image(attribute)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 35)
+                        .frame(width: 40)
                  
                 }
                 HStack{
@@ -66,7 +66,7 @@ struct Sky_dragon: View {
                         Text(description)
                             .font(
                             .custom(
-                                "STHeitiTC-Medium", size: 13,
+                                "STHeitiTC-Medium", size: 14,
                                 relativeTo: .body  )
                         )
                         Spacer()
