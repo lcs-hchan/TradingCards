@@ -16,27 +16,44 @@ struct ContentView: View {
                         Tormentor()
                     }label: {
                         Text("Obelisk The Tormentor")
+                            .font(
+                                .custom(
+                                    "AmericanTypewriter", size: 20,
+                                    relativeTo: .body  )
+                            )
 
                     }
                     NavigationLink{
                         Ra()
                     }label: {
                         Text("The Winged Dragon of Ra")
+                            .font(
+                                .custom(
+                                    "AmericanTypewriter", size: 20,
+                                    relativeTo: .body  )
+                            )
 
                     }
                     NavigationLink{
                         Slifer()
                     }label: {
                         Text("Slifer The Sky Dragon")
+                            .font(
+                                .custom(
+                                    "AmericanTypewriter", size: 20,
+                                    relativeTo: .body  )
+                            )
 
                     }
                    
                 }
             }
             .navigationTitle("Yugioh God Cards")
+           
         }
        
     }
+        
 }
 
 #Preview {

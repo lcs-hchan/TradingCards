@@ -24,8 +24,11 @@ struct Sky_dragon: View {
                 HStack{
                     Spacer()
                     Text(name)
-                        .bold()
-                        .font(.system(size: 23))
+                        .font(
+                            .custom(
+                                "Copperplate Light", size: 23,
+                                relativeTo: .body  )
+                        )
                     Spacer()
                     Image(attribute)
                         .resizable()
@@ -60,8 +63,11 @@ struct Sky_dragon: View {
                         
                         .padding()
                         Text(description)
-                            .font(.system(size: 13))
-                            .bold()
+                            .font(
+                            .custom(
+                                "STHeitiTC-Medium", size: 13,
+                                relativeTo: .body  )
+                        )
                         Spacer()
      
                         HStack{
