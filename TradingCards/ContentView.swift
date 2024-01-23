@@ -26,7 +26,7 @@ struct ContentView: View {
                     NavigationLink{
                         Ra()
                     }label: {
-                        Text("The Winged Dragon of Ra")
+                        Text("The Winged Dragon Of Ra")
                             .font(
                                 .custom(
                                     "AmericanTypewriter", size: 20,

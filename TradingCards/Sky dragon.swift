@@ -33,7 +33,7 @@ struct Sky_dragon: View {
                     Image(attribute)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 40)
+                        .frame(width: 35)
                  
                 }
                 HStack{
@@ -41,18 +41,19 @@ struct Sky_dragon: View {
                     Image(stars)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 250)
+                        .frame(width: 200)
                 }
                 Image(image)
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 360)
+                    .frame(height: 330)
                    
                     
                 ZStack{
                     Rectangle()
                         .frame(width: 20, height: 20)
                     Color("Color2")
+                        .padding()
 
                     VStack{
                         HStack{
@@ -69,7 +70,7 @@ struct Sky_dragon: View {
                                 relativeTo: .body  )
                         )
                         Spacer()
-     
+                        Divider()
                         HStack{
                             Spacer()
                             Text(stats)
@@ -78,6 +79,7 @@ struct Sky_dragon: View {
                             
                         }
                     }
+                    .padding()
                 }
                
                 
