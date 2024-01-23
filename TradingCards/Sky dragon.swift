@@ -71,6 +71,7 @@ struct Sky_dragon: View {
                         )
                         Spacer()
                         Divider()
+                            .overlay(.black)
                         HStack{
                             Spacer()
                             Text(stats)
