@@ -45,9 +45,10 @@ struct ContentView: View {
                             )
 
                     }
-                   
                 }
             }
+            .listStyle(.plain)
+            .background(.blue)
             .navigationTitle("Yugioh God Cards")
            
         }
