@@ -7,30 +7,26 @@
 
 import SwiftUI
 
-struct Sky_dragon: View {
-    let name: String
-    let attribute: String
-    let stars: String
-    let type: String
-    let description: String
-    let stats: String
-    var image: String
-    var backcolor: String
+struct TemplateView: View {
+
+    let character:TradingCard
+    
     var body: some View {
         ZStack {
-        Color(backcolor)
+            Color(character.backcolor)
                 .ignoresSafeArea()
+            
             VStack{
                 HStack{
                     Spacer()
-                    Text(name)
+                    Text(character.name)
                         .font(
                             .custom(
                                 "Copperplate Light", size: 23,
                                 relativeTo: .body  )
                         )
                     Spacer()
-                    Image(attribute)
+                    Image(character.attribute)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 40)
@@ -38,12 +34,12 @@ struct Sky_dragon: View {
                 }
                 HStack{
                     Spacer()
-                    Image(stars)
+                    Image(character.stars)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 200)
                 }
-                Image(image)
+                Image(character.image)
                     .resizable()
                     .scaledToFit()
                     .frame(height: 330)
@@ -57,24 +53,24 @@ struct Sky_dragon: View {
 
                     VStack{
                         HStack{
-                            Text(type)
+                            Text(character.type)
                                 .bold()
                             Spacer()
                         }
-                        
                         .padding()
-                        Text(description)
+                        
+                        Text(character.description)
                             .font(
                             .custom(
                                 "STHeitiTC-Medium", size: 14,
-                                relativeTo: .body  )
+                                relativeTo: .body)
                         )
                         Spacer()
                         Divider()
                             .overlay(.black)
                         HStack{
                             Spacer()
-                            Text(stats)
+                            Text(character.stats)
                                 .bold()
                                 .padding()
                             
@@ -90,5 +86,5 @@ struct Sky_dragon: View {
 }
 
 #Preview {
-    Sky_dragon(name: "SLIFER THE SKY DRAGON", attribute: "God", stars: "Stars", type:"[DIVINE BEAST]", description: "The heavens twist and thunders roars, signaling the coming of this ancient creatre, and the dawn of true power", stats: "ATkX000, Def,X000", image: "Stlifer", backcolor: "Color 1")
+  TemplateView(character: stlifer)
 }

@@ -13,7 +13,7 @@ struct ContentView: View {
             VStack(alignment: .leading){
                 List{
                     NavigationLink{
-                        Tormentor()
+                        TemplateView(character: obilsek)
                     }label: {
                         Text("Obelisk The Tormentor")
                             .font(
@@ -24,7 +24,7 @@ struct ContentView: View {
 
                     }
                     NavigationLink{
-                        Ra()
+                        TemplateView(character: ra)
                     }label: {
                         Text("The Winged Dragon Of Ra")
                             .font(
@@ -35,7 +35,7 @@ struct ContentView: View {
 
                     }
                     NavigationLink{
-                        Slifer()
+                        TemplateView(character: stlifer)
                     }label: {
                         Text("Slifer The Sky Dragon")
                             .font(
