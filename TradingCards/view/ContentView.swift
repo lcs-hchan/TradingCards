@@ -22,7 +22,7 @@ struct ContentView: View {
                                 relativeTo: .body  )
                         )
                 }
-                
+                .listRowBackground(Color.red)
             }
             
             .listStyle(.plain)
